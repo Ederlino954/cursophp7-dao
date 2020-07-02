@@ -38,9 +38,16 @@ require_once("config.php");
 
 //==============================================================
 // Atualizando!
+// $usuario = new Usuario();
+// $usuario->loadById(8);
+// $usuario->update("professor", "alteradoupdate");
+// echo $usuario;
+
+//==============================================================
+// deletando
 $usuario = new Usuario();
-$usuario->loadById(8);
-$usuario->update("professor", "alteradoupdate");
+$usuario->loadById(7);
+$usuario->delete();
 echo $usuario;
 
 
